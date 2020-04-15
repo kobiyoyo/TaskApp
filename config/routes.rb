@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'transactions/index'
+  get 'transactions/new'
+  get 'transactions/edit'
+  get 'transactions/show'
     root 'home#index'
     resources :groups
     resources :transactions
