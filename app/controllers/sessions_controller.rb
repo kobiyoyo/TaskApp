@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
 	      redirect_to users_path
 	   else
 	   	  flash[:danger] = 'Error logging in.'
-	      redirect_to login_path
+	      redirect_to '/login'
 	   end
 	end
     def destroy

@@ -6,6 +6,6 @@ module SessionsHelper
 	    !current_user.nil?
 	end
 	def authorized
-	   redirect_to login_path unless logged_in?
+	   redirect_to '/login' unless logged_in?
 	end
 end
