@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
 	   if @user
 	      session[:user_id] = @user.id
 	      flash[:success] = 'Successfully logged in.'
-	      redirect_to users_path
+	      redirect_to @user
 	   else
 	   	  flash[:danger] = 'Error logging in.'
 	      redirect_to '/login'
@@ -13,6 +13,6 @@ class SessionsController < ApplicationController
 	end
     def destroy
 	    session[:user_id] = nil
-	    redirect_to root_path, notice: "Logged out!"
+	    redirect_to root_path, success: "Logged out!"
     end
 end

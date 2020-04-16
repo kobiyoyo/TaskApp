@@ -12,6 +12,8 @@ gem 'devise'
 gem 'omniauth-facebook'
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
+
+gem 'jquery-rails'
 gem 'sass-rails', '>= 6'
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker

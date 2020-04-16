@@ -1,5 +1,13 @@
-<h1>New User</h1>
+<div class="row">
+  <div class="col-md-4 offset-md-4  center-element">
+<h1 class="mb-5">Sign Up</h1>
 
 <%= render 'form', user: @user %>
 
-<%= link_to 'Back', users_path %>
+
+	<small id="usernameHelp" class="form-text text-muted">Already have an account? <%= link_to "Login", login_path() ,class:"alert-link" %></small>
+
+
+  </div>
+
+</div>

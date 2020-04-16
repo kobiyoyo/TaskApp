@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+$main-color: #3778c2;
+$sec-color: #5fb523;
+$text-color: #434b54;
+
+.btn-sec{
+	background: $sec-color;
+    color: white;
+    border: none;
+    border-bottom: 5px solid darken($sec-color,5%);
+}
+.heading-text{
+	 font-weight: 700;
+}
+
+.btn-login{
+	background: $main-color !important;
+    color: white;
+    border: none;
+    border-bottom: 5px solid darken($main-color,5%);
+}
+.btn-login:active{
+	border: none;
+}
+.btn-signup{
+    color: $text-color;
+    background:whitesmoke;
+    border:none;
+    border-bottom: 5px solid darken(whitesmoke,20%);
+}
+.btn-signup:active{
+	border: none;
+}
+.center-element{
+	width: 100%;
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+.width-100{
+	width: 100%;
+}
+
+
+.btn-sec:active{
+	border: none;
+}
+.btn-sec:focus{
+	border: none;
+	color:white;
+}
+body{
+ font-family: 'Roboto', sans-serif;
+}
+
+.mb-11{
+
+	margin-bottom:11rem; 
+}
+/**{
+	border:1px red solid;
+}*/
