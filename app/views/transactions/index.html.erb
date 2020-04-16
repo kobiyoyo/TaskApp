@@ -1,2 +1,3 @@
-<h1>Transactions#index</h1>
-<p>Find me in app/views/transactions/index.html.erb</p>
+<% @transactions.each do |transaction| %>
+ <%= transaction.name %>
+<% end %>
