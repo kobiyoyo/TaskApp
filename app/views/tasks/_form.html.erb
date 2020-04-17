@@ -10,20 +10,17 @@
       </ul>
     </div>
   <% end %>
-  <div>
+ <div class="form-group">
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name,class:"form-control" %>
  </div>
  <div>
   <%= f.label :hours %>
-  <%= f.text_field :hours %>
+  <%= f.text_field :hours,class:"form-control" %>
  </div>
-
-
-
- <div>
+  <div class="form-group">
   <%= f.label 'Group' %>
-  <%= f.collection_check_boxes :group_ids, Group.all,:id, :name do |g| %>
+  <%= f.collection_check_boxes :group_ids, current_user.groups.all,:id, :name do |g| %>
   <div class="collection-check-box">
   	<%= g.check_box %>
   	<%= g.label %>
@@ -34,6 +31,7 @@
 
 
  <p>
-  <%= f.submit %>
+  <%= f.submit class:"btn-sec btn-lg width-100 mb-3" %>
+
  </p> 
 <% end %>

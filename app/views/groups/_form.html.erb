@@ -10,15 +10,16 @@
       </ul>
     </div>
   <% end %>
-  <div>
+  <div class="form-group">
+
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name,class:"form-control" %>
  </div>
- <div>
-  <%= f.label :icon %>
-  <%= f.text_field :icon %>
+ <div class="form-group">
+  <%= f.label :icon %><br>
+  <%= f.select(:icon,@group_list.map { |value| [ value.capitalize, value ]})  %>
  </div>
  <p>
-  <%= f.submit %>
+  <%= f.submit class:"btn-sec btn-lg width-100 mb-3" %>
  </p> 
 <% end %>

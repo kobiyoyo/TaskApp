@@ -17,6 +17,12 @@
 $main-color: #3778c2;
 $sec-color: #5fb523;
 $text-color: #434b54;
+.nav-main-bg{
+	background:$main-color;
+}
+.nav-main-bg > a{
+	color:white;
+}
 
 .btn-sec{
 	background: $sec-color;
@@ -59,10 +65,7 @@ $text-color: #434b54;
 .btn-sec:active{
 	border: none;
 }
-.btn-sec:focus{
-	border: none;
-	color:white;
-}
+
 body{
  font-family: 'Roboto', sans-serif;
 }
@@ -71,6 +74,3 @@ body{
 
 	margin-bottom:11rem; 
 }
-/**{
-	border:1px red solid;
-}*/

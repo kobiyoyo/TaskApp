@@ -15,9 +15,6 @@
 
     <% if logged_in? %>
     <%= render 'shared/nav' %>
-    <%= link_to 'All groups', groups_path %>
-    <h1>You are Logged In, <%= current_user.username %></h1>
-    <%= link_to "Logout", logout_path %>
 <%end%>
 
 

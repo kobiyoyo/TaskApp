@@ -1,5 +1,59 @@
+
+<div class="row mt-5">
+	  <div class="col-md-5 offset-md-3  center-element">
+	<h1 class="mb-5 text-center heading-text">Groups</h1>
+
 <% @groups.each do |group| %>
-	<h2><%= group.name %> <%= group.created_at %> <%= link_to 'Show',group_path(group) %> <%= link_to 'Edit',edit_group_path(group) %>  
-		<%= link_to 'delete',group,method: :delete, data: { confirm: 'Are you sure?' }  %></h2>
+
+
+	<div class="card mb-3" style="max-width: 540px;">
+	  <div class="row no-gutters">
+	    <div class="col-md-4">
+	    	<% if group.icon %>
+	    	<%= image_tag("icons/#{group.icon}.svg", size: "50",class:"card-img mt-4" )  %>
+	  		<%end%>
+	    </div>
+	    <div class="col-md-8">
+	      <div class="card-body">
+	        <h5 class="card-title"><%= group.name %></h5>
+	         <div class="card-text">
+	         	 <%= link_to 'Show',group_path(group) %> 
+	         	<%= link_to 'Edit', edit_group_path(group)%>
+	         	<%= link_to 'Delete', group,method: :delete, data: { confirm: 'Are you sure?' } %>
+	         </div>
+               <%  diff = Time.now.to_i - group.created_at.to_i %>
+
+	        <p class="card-text"><small class="text-muted"><%= distance_of_time_in_words(diff) %> ago</small></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	  
 <% end %>
-<%= link_to 'Create new',new_group_path %>
+ <%= button_to "Create new", new_group_path() ,class:"btn-sec btn-lg width-100 mb-3", method: :get %>
+ <%= button_to "Back", current_user ,class:"btn-signup btn-lg width-100 mb-5", method: :get %>
+
+</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

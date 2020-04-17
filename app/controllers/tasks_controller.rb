@@ -3,7 +3,12 @@ class TasksController < ApplicationController
   before_action :authorized
 
   def index
-  	@tasks = current_user.tasks
+  	@tasks = current_user.tasks.order('created_at DESC')
+    @total_task = current_user.tasks.sum(:hours) 
+  end
+  def external
+    @tasks = Task.not_in_any_group
+    @total_task = @tasks.sum(:hours) 
   end
 
   def new
@@ -13,10 +18,10 @@ class TasksController < ApplicationController
   def create
   	@task = current_user.tasks.new(task_params)
   	if @task.save
-  		flash[:success] = 'Tasks successfully created.'
+  		flash[:success] = 'Task successfully created.'
   		redirect_to tasks_path
   	else
-  		flash.now[:success] = "Tasks wasn't created."
+  		flash.now[:success] = "Task wasn't created."
   		render :new
   	end
   end
@@ -27,10 +32,10 @@ class TasksController < ApplicationController
 
   def update
   	if @task.update(task_params)
-  		flash[:success] = 'Tasks successfully updated.'
+  		flash[:success] = 'Task successfully updated.'
   		redirect_to tasks_path
   	else
-  		flash.now[:danger] = "Tasks wasn't updated."
+  		flash.now[:danger] = "Task wasn't updated."
   		render :edit
   	end
   end
@@ -42,7 +47,7 @@ class TasksController < ApplicationController
 
   def destroy
   	@task.destroy
-  	redirect_to tasks_path,danger: 'Tasks successfully deleted.'
+  	redirect_to tasks_path,danger: 'Task successfully deleted.'
   end
 
   private
