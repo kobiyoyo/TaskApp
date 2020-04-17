@@ -1,11 +1,12 @@
 require 'rails_helper'
-
+require_relative '../support/login_form'
 feature 'create group' do 
     let(:user){FactoryBot.create(:user,username:'chubi')}
+    let(:login_form) { LoginForm.new }
+    background do
+      login_form.visit_page.login_as(user)
+    end
 	scenario 'successfully'  do
-		visit login_path
-		fill_in 'Username' ,with: user.username
-        click_on("Login")
 		expect(page).to have_content('Successfully logged in.')
 		click_on('All groups')
 		click_on('Create new')
@@ -16,9 +17,6 @@ feature 'create group' do
 
 	end
 	scenario 'unsuccessfully (name = nil)'  do
-		visit login_path
-		fill_in 'Username' ,with: user.username
-		click_on("Login")
 		expect(page).to have_content('Successfully logged in.')
 		click_on('All groups')
 		click_on('Create new')
@@ -28,9 +26,7 @@ feature 'create group' do
 
 	end
 	scenario 'unsuccessfully (icon = nil)'  do
-		visit login_path
-		fill_in 'Username' ,with: user.username
-        click_on("Login")
+
 		expect(page).to have_content('Successfully logged in.')
 		click_on('All groups')
 		click_on('Create new')

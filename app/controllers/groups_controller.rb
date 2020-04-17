@@ -1,7 +1,7 @@
 class GroupsController < ApplicationController
   before_action :set_groups,only: [:show,:edit,:destroy,:update]
   before_action :authorized
-  before_action :icons,only: [:new]
+  
 
   def index
   	@groups = current_user.groups.order('created_at DESC')
@@ -52,100 +52,6 @@ class GroupsController < ApplicationController
   def set_groups
   	@group = Group.find(params[:id])
   end
-
-  def icons
-    @group_list = [
-      '',
-      'activity',
-      'alert',
-      'archive',
-      'backwards',
-      'bag',
-      'ban',
-      'bell',
-      'bookmark',
-      'book',
-      'calendar',
-      'camera',
-      'caret-bottom',
-      'caret-left',
-      'caret-right',
-      'caret-top',
-      'cart',
-      'checkmark',
-      'chevron-bottom',
-      'chevron-left',
-      'chevron-right',
-      'chevron-top',
-      'clipboard',
-      'clock',
-      'close',
-      'code',
-      'compose',
-      'creditcard',
-      'desktop',
-      'download',
-      'edit',
-      'eject',
-      'ellipsis-horizontal',
-      'ellipsis-vertical',
-      'end',
-      'export',
-      'external',
-      'eye',
-      'feed',
-      'file',
-      'flag',
-      'folder-open',
-      'folder',
-      'forwards',
-      'fullscreen',
-      'gift',
-      'heart',
-      'home',
-      'import',
-      'inbox',
-      'info',
-      'lightning',
-      'location',
-      'lock',
-      'mail',
-      'menu',
-      'message',
-      'microphone',
-      'minus',
-      'mobile',
-      'moon',
-      'move',
-      'music',
-      'paperclip',
-      'pause',
-      'photo',
-      'play',
-      'plus',
-      'portfolio',
-      'print',
-      'reload',
-      'reply',
-      'search',
-      'send',
-      'settings',
-      'star',
-      'start',
-      'tag',
-      'telephone',
-      'trash',
-      'twitter',
-      'unlock',
-      'upload',
-      'user',
-      'video',
-      'volume',
-      'work',
-      'zoom-in',
-      'zoom-out'
-]
-  end 
 
 
 end

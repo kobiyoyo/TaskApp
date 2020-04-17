@@ -1,6 +1,5 @@
 require 'rails_helper'
 
-
 feature 'create user' do 
 	scenario 'successfully' do 
 		visit(new_user_path)
