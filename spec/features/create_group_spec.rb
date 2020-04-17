@@ -5,14 +5,12 @@ feature 'create group' do
 	scenario 'successfully'  do
 		visit login_path
 		fill_in 'Username' ,with: user.username
-		within(".control") do
-            click_on("Login")
-        end
+        click_on("Login")
 		expect(page).to have_content('Successfully logged in.')
 		click_on('All groups')
 		click_on('Create new')
 		fill_in 'Name',with: 'Cars'
-		fill_in 'Icon',with: '<i class="fa fa play" />'
+		select "lock",from:"group[icon]"
 		click_on('Create Group')
 		expect(page).to have_content('Group successfully created.')
 
@@ -20,13 +18,11 @@ feature 'create group' do
 	scenario 'unsuccessfully (name = nil)'  do
 		visit login_path
 		fill_in 'Username' ,with: user.username
-		within(".control") do
-            click_on("Login")
-        end
+		click_on("Login")
 		expect(page).to have_content('Successfully logged in.')
 		click_on('All groups')
 		click_on('Create new')
-		fill_in 'Icon',with: '<i class="fa fa play" />'
+		select "Clock",from:"group[icon]"
 		click_on('Create Group')
 		expect(page).to have_content("Name can't be blank")
 
@@ -34,9 +30,7 @@ feature 'create group' do
 	scenario 'unsuccessfully (icon = nil)'  do
 		visit login_path
 		fill_in 'Username' ,with: user.username
-		within(".control") do
-            click_on("Login")
-        end
+        click_on("Login")
 		expect(page).to have_content('Successfully logged in.')
 		click_on('All groups')
 		click_on('Create new')

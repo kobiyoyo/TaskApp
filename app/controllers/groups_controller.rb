@@ -54,7 +54,9 @@ class GroupsController < ApplicationController
   end
 
   def icons
-    @group_list = ['activity',
+    @group_list = [
+      '',
+      'activity',
       'alert',
       'archive',
       'backwards',

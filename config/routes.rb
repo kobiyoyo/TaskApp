@@ -2,7 +2,6 @@ Rails.application.routes.draw do
     root 'home#index'
     resources :tasks
     resources :groups
-    resources :transactions
     resources :users
 	resources :sessions,only: [:destroy]
     get 'external', to: 'tasks#external', as: :external

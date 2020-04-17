@@ -6,7 +6,7 @@ feature 'create user' do
 		visit(new_user_path)
 		fill_in 'Username',with: 'felix'
 		click_on('Create User')
-		expect(page).to have_content('User was successfully created.')
+		expect(page).to have_content("Felix")
 	end
 	scenario 'unsuccessfully' do 
 		visit(new_user_path)

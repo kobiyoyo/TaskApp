@@ -17,7 +17,8 @@
  </div>
  <div class="form-group">
   <%= f.label :icon %><br>
-  <%= f.select(:icon,@group_list.map { |value| [ value.capitalize, value ]})  %>
+  <%= f.select(:icon, [['activity'.capitalize, 'activity'],['alert'.capitalize, 'alert'],['clock'.capitalize, 'clock']], { include_blank: true })  %>
+
  </div>
  <p>
   <%= f.submit class:"btn-sec btn-lg width-100 mb-3" %>
