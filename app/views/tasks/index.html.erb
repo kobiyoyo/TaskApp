@@ -1,43 +1,42 @@
-
 <div class="row mt-5">
-	  <div class="col-md-5 offset-md-3  center-element">
-	<h1 class="mb-5 text-center heading-text">Tasks</h1>
-<ul class="nav justify-content-center mb-5">
-  <li class="nav-item">
-    <h1>Total : <%= @total_task %>hrs</h1>
-  </li>
-</ul>
-<% @tasks.each do |task| %>
+    <div class="col-md-5 offset-md-3  center-element">
+        <h1 class="mb-5 text-center heading-text">Tasks</h1>
+        <ul class="nav justify-content-center mb-5">
+            <li class="nav-item">
+                <h1>Total : <%= @total_task %>hrs</h1>
+            </li>
+        </ul>
+        <% @tasks.each do |task| %>
 
 
-	<div class="card mb-3" style="max-width: 540px;">
-	  <div class="row no-gutters">
-	    <div class="col-md-4">
-	    	<% if task.groups.first %>
-	    	<% task_group = task.groups.first %>
-	    	<%= image_tag("icons/#{task_group.icon}.svg", size: "50",class:"card-img mt-4" )  %>
-	  		<%end%>
-	    </div>
-	    <div class="col-md-8">
-	      <div class="card-body">
-	        <h5 class="card-title"><%= task.name %> <span class="text-right pl-4 font-weight-bold"><%= task.hours %>hrs</span></h5>
-	         <div class="card-text">
-	         	<%= link_to 'Edit', edit_task_path(task)%>
-	         	<%= link_to 'Delete', task,method: :delete, data: { confirm: 'Are you sure?' } %>
-	         </div>
-               <%  diff = Time.now.to_i - task.created_at.to_i %>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <% if task.groups.first %>
+                    <% task_group = task.groups.first %>
+                    <%= image_tag("icons/#{task_group.icon}.svg", size: "50",class:"card-img mt-4" )  %>
+                    <%end%>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= task.name %> <span class="text-right pl-4 font-weight-bold"><%= task.hours %>hrs</span></h5>
+                        <div class="card-text">
+                            <%= link_to 'Edit', edit_task_path(task)%>
+                            <%= link_to 'Delete', task,method: :delete, data: { confirm: 'Are you sure?' } %>
+                        </div>
+                        <%  diff = Time.now.to_i - task.created_at.to_i %>
 
-	        <p class="card-text"><small class="text-muted"><%= distance_of_time_in_words(diff) %> ago</small></p>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+                        <p class="card-text"><small class="text-muted"><%= distance_of_time_in_words(diff) %> ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	  
-<% end %>
- <%= button_to "Add new", new_task_path() ,class:"btn-sec btn-lg width-100 mb-3", method: :get %>
- <%= button_to "Back", current_user ,class:"btn-signup btn-lg width-100 mb-5", method: :get %>
+
+        <% end %>
+        <%= button_to "Add new", new_task_path() ,class:"btn-sec btn-lg width-100 mb-3", method: :get %>
+        <%= button_to "Back", current_user ,class:"btn-signup btn-lg width-100 mb-5", method: :get %>
+
+    </div>
 
 </div>
-
-	</div>

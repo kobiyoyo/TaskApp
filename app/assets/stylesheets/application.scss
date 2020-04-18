@@ -13,64 +13,62 @@
  *= require_tree .
  *= require_self
  */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
 $main-color: #3778c2;
 $sec-color: #5fb523;
 $text-color: #434b54;
-.nav-main-bg{
-	background:$main-color;
+.nav-main-bg {
+  background: $main-color;
 }
-.nav-main-bg > a{
-	color:white;
-}
-
-.btn-sec{
-	background: $sec-color;
-    color: white;
-    border: none;
-    border-bottom: 5px solid darken($sec-color,5%);
-}
-.heading-text{
-	 font-weight: 700;
+.nav-main-bg > a {
+  color: white;
 }
 
-.btn-login{
-	background: $main-color !important;
-    color: white;
-    border: none;
-    border-bottom: 5px solid darken($main-color,5%);
+.btn-sec {
+  background: $sec-color;
+  color: white;
+  border: none;
+  border-bottom: 5px solid darken($sec-color, 5%);
 }
-.btn-login:active{
-	border: none;
-}
-.btn-signup{
-    color: $text-color;
-    background:whitesmoke;
-    border:none;
-    border-bottom: 5px solid darken(whitesmoke,20%);
-}
-.btn-signup:active{
-	border: none;
-}
-.center-element{
-	width: 100%;
-	margin-right: auto !important;
-	margin-left: auto !important;
-}
-.width-100{
-	width: 100%;
+.heading-text {
+  font-weight: 700;
 }
 
-
-.btn-sec:active{
-	border: none;
+.btn-login {
+  background: $main-color !important;
+  color: white;
+  border: none;
+  border-bottom: 5px solid darken($main-color, 5%);
+}
+.btn-login:active {
+  border: none;
+}
+.btn-signup {
+  color: $text-color;
+  background: whitesmoke;
+  border: none;
+  border-bottom: 5px solid darken(whitesmoke, 20%);
+}
+.btn-signup:active {
+  border: none;
+}
+.center-element {
+  width: 100%;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.width-100 {
+  width: 100%;
 }
 
-body{
- font-family: 'Roboto', sans-serif;
+.btn-sec:active {
+  border: none;
 }
 
-.mb-11{
+body {
+  font-family: "Roboto", sans-serif;
+}
 
-	margin-bottom:11rem; 
+.mb-11 {
+  margin-bottom: 11rem;
 }

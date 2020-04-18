@@ -1,26 +1,26 @@
 <%= form_with(model:group,local: true) do |f| %>
-  <% if group.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(group.errors.count, "error") %> prohibited this group from being saved:</h2>
+<% if group.errors.any? %>
+<div id="error_explanation">
+    <h2><%= pluralize(group.errors.count, "error") %> prohibited this group from being saved:</h2>
 
-      <ul>
+    <ul>
         <% group.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
+        <li><%= message %></li>
         <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <div class="form-group">
+    </ul>
+</div>
+<% end %>
+<div class="form-group">
 
-  <%= f.label :name %>
-  <%= f.text_field :name,class:"form-control" %>
- </div>
- <div class="form-group">
-  <%= f.label :icon %><br>
-  <%= f.select(:icon, [['activity'.capitalize, 'activity'],['alert'.capitalize, 'alert'],['clock'.capitalize, 'clock'],['bag'.capitalize, 'bag'],['bell'.capitalize, 'bell'],['edit'.capitalize, 'edit'],['archive'.capitalize, 'archive'],['camera'.capitalize, 'camera'],['eye'.capitalize, 'eye'],['creditcard'.capitalize, 'creditcard'],['microphone'.capitalize, 'microphone'],['home'.capitalize, 'home'],['mail'.capitalize, 'mail'],['gift'.capitalize, 'gift'],['mobile'.capitalize, 'mobile'],['music'.capitalize, 'music'],['lightning'.capitalize, 'lightning'],['message'.capitalize, 'message']], { include_blank: true })  %>
+    <%= f.label :name %>
+    <%= f.text_field :name,class:"form-control" %>
+</div>
+<div class="form-group">
+    <%= f.label :icon %><br>
+    <%= f.select(:icon, [['activity'.capitalize, 'activity'],['alert'.capitalize, 'alert'],['clock'.capitalize, 'clock'],['bag'.capitalize, 'bag'],['bell'.capitalize, 'bell'],['edit'.capitalize, 'edit'],['archive'.capitalize, 'archive'],['camera'.capitalize, 'camera'],['eye'.capitalize, 'eye'],['creditcard'.capitalize, 'creditcard'],['microphone'.capitalize, 'microphone'],['home'.capitalize, 'home'],['mail'.capitalize, 'mail'],['gift'.capitalize, 'gift'],['mobile'.capitalize, 'mobile'],['music'.capitalize, 'music'],['lightning'.capitalize, 'lightning'],['message'.capitalize, 'message']], { include_blank: true })  %>
 
- </div>
- <p>
-  <%= f.submit class:"btn-sec btn-lg width-100 mb-3" %>
- </p> 
+</div>
+<p>
+    <%= f.submit class:"btn-sec btn-lg width-100 mb-3" %>
+</p>
 <% end %>
