@@ -15,6 +15,7 @@ $text-color: #434b54;
   background: $sec-color;
   color: white;
   border: none;
+  font-size:3rem !important;
   border-bottom: 5px solid darken($sec-color, 5%);
 }
 .heading-text {
@@ -25,6 +26,7 @@ $text-color: #434b54;
   background: $main-color !important;
   color: white;
   border: none;
+  font-size:3rem !important;
   border-bottom: 5px solid darken($main-color, 5%);
 }
 .btn-login:active {
@@ -33,6 +35,7 @@ $text-color: #434b54;
 .btn-signup {
   color: $text-color;
   background: whitesmoke;
+  font-size:3rem !important;
   border: none;
   border-bottom: 5px solid darken(whitesmoke, 20%);
 }
@@ -54,8 +57,17 @@ $text-color: #434b54;
 
 body {
   font-family: "Roboto", sans-serif;
+    font-size:3rem !important;
 }
-
+h1,h2,h3,h4,h5{
+    font-size:2rem !important;
+}
 .mb-11 {
   margin-bottom: 11rem;
+}
+a{
+    font-size:2rem !important;
+}
+input{
+    font-size:2rem !important;
 }
