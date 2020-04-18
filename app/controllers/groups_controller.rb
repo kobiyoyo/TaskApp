@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class GroupsController < ApplicationController
   before_action :set_groups, only: %i[show edit destroy update]
   before_action :authorized
