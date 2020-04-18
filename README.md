@@ -1,43 +1,60 @@
-# Project: [Group APP](#)
+<br />
+<p align="center">
+  <h1 align="center"> Task APP</h1>
 
-## Live version of project :  [groupon](https://radiant-castle-10293.herokuapp.com/)
-![screen](https://github.com/Anna-Myzukina/groupon/blob/development/app/assets/images/screen.png)
+  <p align="center">
+    A Ruby on Rails application
+    <br />
+    <br />
+    <a href="https://sheltered-taiga-65616.herokuapp.com/">View Demo</a>
+    ·
+    <a href="https://github.com/kobiyoyo/TaskApp/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/kobiyoyo/TaskApp/issues">Request Feature</a>
+  </p>
+  <img src="app/assets/images/screenshot.png" alt="facebook-project">
+</p>
+
 
 ## Description
 
-This is the Ruby on Rails capstone. It`s based on an app for creating different groups and adding your activities to these groups by a goal with your family/friends.
+This is a Ruby on Rails capstone required by [Microverse](https://www.microverse.org/). It`s an app for creating different groups and adding your tasks to these groups,the tasks include hours spent ,which is great tool to track and organise your time.
 
 
-## Skills
-- [ ] Ruby 
-- [ ] Ruby on Rails
-- [ ] Bootstrap 4
-- [ ] bcrypt
-- [ ] Bullet
-- [ ] rubocop
-- [ ] postgreSQL
+## Built With
+- Ruby 
+- Ruby on Rails
+- Bootstrap 4
+- Bullet
+- Rubocop
+- PostgreSQL
 
 ## Features
-- [ ] A user can signup/login
-- [ ] A user can create, delete, edit groups of avtivities.
-- [ ] A user can create, delete, edit avtivities.
-- [ ] Bootstrap source in vendor/assets
-- [ ] Font awesome CSS source
+- A user can signup/login
+- A user can create, delete, edit groups of tasks.
+- A user can create, delete, edit tasks.
+- Bootstrap source in vendor/assets
+- Google font  CSS source
+
+## Future features
+* User can Create a timer for each task.
+* Users can add description to task.
+* Logout after 5 minutes of inactivity
+
 
 ## Environment
-- [ ] Ruby on Rails version 5.1.7
-- [ ] bcrypt version 3.1.12 ([bcrypt()](https://github.com/codahale/bcrypt-ruby) allows you to easily harden your application against these kinds of attacks.)
-- [ ] ([bootstrap-sass](https://www.rubydoc.info/gems/bootstrap-sass/3.3.6) is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications version 3.3.7
-- [ ] Puma: A Ruby Web Server Built For Concurrency version '3.9.1'
+- Ruby on Rails version 6.0
+- [Bootstrap-sass](https://www.rubydoc.info/gems/bootstrap-sass/3.3.6) is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications version 3.3.7
+- Puma: A Ruby Web Server Built For Concurrency version '3.9.1'
 
 ## Getting started
-- [ ] To get started with the app, clone the repo and then install the needed gems:
+- To get started with the app, clone the repo and then install the needed gems:
 
 ```
 $ bundle install --without production
 ```
 
-- [ ] Next, migrate the database:
+- Next, migrate the database:
 
 $ rails db:create
 
@@ -45,32 +62,46 @@ $ rails db:create
 $ rails db:migrate
 ```
 
-- [ ] If the test suite passes, you'll be ready to run the app in a local server:
+- If the test suite passes, you'll be ready to run the app in a local server:
 
 ```
 $ rails server
 ```
-- [ ] Finally, run the test suite to verify that everything is working correctly:
-
-```
-$ rails generate rspec:install
-```
+- Finally, run the test suite to verify that everything is working correctly:
 
 ```
 $ rspec
 ```
+## Live version
 
-
-
-## Show your support
-
-- [ ] Give a ⭐️ if you like this project!
-
-## 📝 License
-
-* [ ] See [LICENSE.md]() for details.
+[Demo](https://sheltered-taiga-65616.herokuapp.com/)
 
 ## Authors
 
-👤 **Author1**
-* [ ] [Anna Muzykina](https://github.com/Anna-Myzukina)
+👤 **Adama Chubiyojo Desmond**
+
+-  [Github](https://github.com/kobiyoyo)
+-  [Twitter](https://twitter.com/_kobiyoyo)
+-  [Linkedin](https://www.linkedin.com/in/chubiyojo-adama/)
+-  [Email](mailto:adamachubi@gmail.com)
+
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/kobiyoyo/TaskApp/issues).
+
+1. Fork it (https://github.com/kobiyoyo/TaskApp/fork)
+2. Create your working branch (git checkout -b [choose-a-name])
+3. Commit your changes (git commit -am 'what this commit will fix/add')
+4. Push to the branch (git push origin feature/[feature-name])
+5. Create a new Pull Request
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
