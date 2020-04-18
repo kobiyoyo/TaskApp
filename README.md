@@ -6,7 +6,7 @@
     A Ruby on Rails application
     <br />
     <br />
-    <a href="https://honeytask.herokuapp.com/">View Demo</a>
+    <a href="https://stormy-ravine-81598.herokuapp.com/">View Demo</a>
     ·
     <a href="https://github.com/kobiyoyo/TaskApp/issues">Report Bug</a>
     ·
@@ -74,7 +74,7 @@ $ rspec
 ```
 ## Live version
 
-[Demo](https://honeytask.herokuapp.com/)
+[Demo](https://stormy-ravine-81598.herokuapp.com/)
 
 ## Authors
 
