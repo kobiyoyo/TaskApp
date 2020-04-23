@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <h1 class="mb-5">Login</h1>
+        <%= form_tag login_path,class:'cont' do %>
+        <div class="form-group">
+            <%= label_tag :username %><br>
+            <%= text_field_tag :username %>
+            <small id="usernameHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
+        </div>
+        <%= submit_tag "Login", class:"btn-sec btn-lg"%>
+
+        <%end%>
+        <small id="usernameHelp" class="form-text text-muted">Dont have an account? <%= link_to "Sign Up", signup_path() ,class:"alert-link" %></small>
+    </div>
+
+</div>
