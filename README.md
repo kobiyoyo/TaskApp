@@ -1,24 +1,107 @@
-# README
+<br />
+<p align="center">
+  <h1 align="center"> Task APP</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  <p align="center">
+    A Ruby on Rails application
+    <br />
+    <br />
+    <a href="https://stormy-ravine-81598.herokuapp.com/">View Demo</a>
+    ·
+    <a href="https://github.com/kobiyoyo/TaskApp/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/kobiyoyo/TaskApp/issues">Request Feature</a>
+  </p>
+  <img src="app/assets/images/screenshot.png" alt="facebook-project">
+</p>
 
-Things you may want to cover:
 
-* Ruby version
+## Description
 
-* System dependencies
+This is a Ruby on Rails capstone required by [Microverse](https://www.microverse.org/). It`s an app for creating different groups and adding your tasks to these groups,the tasks include hours spent ,which is great tool to track and organise your time.
 
-* Configuration
 
-* Database creation
+## Built With
+- Ruby 
+- Ruby on Rails
+- Bootstrap 4
+- Bullet
+- Rubocop
+- PostgreSQL
 
-* Database initialization
+## Features
+- A user can signup/login
+- A user can create, delete, edit groups of tasks.
+- A user can create, delete, edit tasks.
+- Bootstrap source in vendor/assets
+- Google font  CSS source
 
-* How to run the test suite
+## Future features
+* User can Create a timer for each task.
+* Users can add description to task.
+* Logout after 5 minutes of inactivity
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Environment
+- Ruby on Rails version 6.0
+- [Bootstrap-sass](https://www.rubydoc.info/gems/bootstrap-sass/3.3.6) is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications version 3.3.7
+- Puma: A Ruby Web Server Built For Concurrency version '3.9.1'
 
-* ...
+## Getting started
+- To get started with the app, clone the repo and then install the needed gems:
+
+```
+$ bundle install --without production
+```
+
+- Next, migrate the database:
+
+$ rails db:create
+
+```
+$ rails db:migrate
+```
+
+- If the test suite passes, you'll be ready to run the app in a local server:
+
+```
+$ rails server
+```
+- Finally, run the test suite to verify that everything is working correctly:
+
+```
+$ rspec
+```
+## Live version
+
+[Demo](https://stormy-ravine-81598.herokuapp.com/)
+
+## Authors
+
+👤 **Adama Chubiyojo Desmond**
+
+-  [Github](https://github.com/kobiyoyo)
+-  [Twitter](https://twitter.com/_kobiyoyo)
+-  [Linkedin](https://www.linkedin.com/in/chubiyojo-adama/)
+-  [Email](mailto:adamachubi@gmail.com)
+
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/kobiyoyo/TaskApp/issues).
+
+1. Fork it (https://github.com/kobiyoyo/TaskApp/fork)
+2. Create your working branch (git checkout -b [choose-a-name])
+3. Commit your changes (git commit -am 'what this commit will fix/add')
+4. Push to the branch (git push origin feature/[feature-name])
+5. Create a new Pull Request
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.

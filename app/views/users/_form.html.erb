@@ -1,0 +1,25 @@
+<%= form_with(model: user, local: true) do |form| %>
+<% if user.errors.any? %>
+<div id="error_explanation">
+    <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+    <ul>
+        <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+    </ul>
+</div>
+<% end %>
+
+
+<div class="form-group">
+    <%= form.label :username %><br>
+    <%= form.text_field :username %>
+    <small id="usernameHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
+</div>
+<div class="form-group">
+    <%= form.label :avatar %><br>
+    <%= form.file_field :avatar %>
+</div>
+<%= form.submit  class:"btn-sec btn-lg"%>
+<% end %>

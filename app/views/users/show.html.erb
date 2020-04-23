@@ -1,0 +1,25 @@
+<div class="row mt-5">
+    <div class="col-md-4 offset-md-4  center-element">
+        <% if @user.avatar.attached? %>
+        <div class="text-center mb-5">
+            <%= image_tag current_user.avatar,size: '180',class:'rounded-circle' %>
+        </div>
+        <% else %>
+        <div class="text-center mb-5">
+            <img src="https://bulma.io/images/placeholders/128x128.png" class="rounded-circle" alt="...">
+        </div>
+        <% end %>
+
+
+
+
+        <h1 class="mb-5 text-center heading-text"> <%= current_user.username.capitalize %></h1>
+
+        <%= button_to "All my tasks", tasks_path() ,class:"btn-sec btn-lg width-100 mb-3" ,method: :get %>
+        <%= button_to "All my external tasks",external_path() ,class:"btn-sec btn-lg width-100 mb-3" ,method: :get %>
+        <%= button_to "All groups", groups_path() ,class:"btn-sec btn-lg width-100  mb-3", method: :get %>
+
+
+    </div>
+
+</div>
