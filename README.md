@@ -17,8 +17,8 @@
 
 
 ## Description
+This is a Ruby on Rails capstone required by [Microverse](https://www.microverse.org/). It’s an app for creating different groups and adding your tasks to these groups, the tasks include hours spent, which is a great tool to track and organize your time.
 
-This is a Ruby on Rails capstone required by [Microverse](https://www.microverse.org/). It`s an app for creating different groups and adding your tasks to these groups,the tasks include hours spent ,which is great tool to track and organise your time.
 
 
 ## Built With
