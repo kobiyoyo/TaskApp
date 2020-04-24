@@ -54,15 +54,15 @@ This is a Ruby on Rails capstone required by [Microverse](https://www.microverse
 $ bundle install --without production
 ```
 
-- Next, migrate the database:
-
+- Next,create & migrate the database:
+```
 $ rails db:create
-
+```
 ```
 $ rails db:migrate
 ```
 
-- If the test suite passes, you'll be ready to run the app in a local server:
+- Run the app in a local server:
 
 ```
 $ rails server
