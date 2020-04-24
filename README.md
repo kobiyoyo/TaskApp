@@ -33,8 +33,6 @@ This is a Ruby on Rails capstone required by [Microverse](https://www.microverse
 - A user can signup/login
 - A user can create, delete, edit groups of tasks.
 - A user can create, delete, edit tasks.
-- Bootstrap source in vendor/assets
-- Google font  CSS source
 
 ## Future features
 * User can Create a timer for each task.
