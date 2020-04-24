@@ -33,8 +33,6 @@ This is a Ruby on Rails capstone required by [Microverse](https://www.microverse
 - A user can signup/login
 - A user can create, delete, edit groups of tasks.
 - A user can create, delete, edit tasks.
-- Bootstrap source in vendor/assets
-- Google font  CSS source
 
 ## Future features
 * User can Create a timer for each task.
@@ -48,29 +46,33 @@ This is a Ruby on Rails capstone required by [Microverse](https://www.microverse
 - Puma: A Ruby Web Server Built For Concurrency version '3.9.1'
 
 ## Getting started
-- To get started with the app, clone the repo and then install the needed gems:
+> To get started with the app, clone the repo and then install the needed gems:
 
 ```
 $ bundle install --without production
 ```
 
-- Next,create & migrate the database:
+> Next,create & migrate the database:
 ```
 $ rails db:create
-```
-```
+
 $ rails db:migrate
 ```
 
-- Run the app in a local server:
+> Run the app in a local server:
 
 ```
 $ rails server
 ```
-- Finally, run the test suite to verify that everything is working correctly:
+> Finally, run the test suite to verify that everything is working correctly:
 
 ```
 $ rspec
+```
+> You can then drop into rails console to explore the models
+
+```sh
+$ cd rails c
 ```
 ## Live version
 
