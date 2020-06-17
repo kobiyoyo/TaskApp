@@ -71,7 +71,7 @@ $ rspec
 > You can then drop into rails console to explore the models
 
 ```sh
-$ cd rails c
+$  rails c
 ```
 ## Live version
 
