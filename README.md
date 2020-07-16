@@ -17,7 +17,7 @@
 
 
 ## Description
-This is a Ruby on Rails capstone required by [Microverse](https://www.microverse.org/). It’s an app for creating different groups and adding your tasks to these groups, the tasks include hours spent, which is a great tool to track and organize your time.
+This is an app that is used for creating different groups and adding your tasks to these groups, the tasks include hours spent, which is a great tool to track and organize your time.
 
 
 ## Built With
@@ -34,7 +34,7 @@ This is a Ruby on Rails capstone required by [Microverse](https://www.microverse
 - A user can create, delete, edit tasks.
 
 ## Future features
-* User can Create a timer for each task.
+* User can create a timer for each task.
 * Users can add description to task.
 * Logout after 5 minutes of inactivity
 
